@@ -21,7 +21,7 @@ resource "aws_security_group" "ssh" {
 
 # Security to allow 80 and 443 port
 resource "aws_security_group" "web" {
-  name        = "${var.vpc_name}-sg"
+  name        = "${var.vpc_name}-sg-1"
   description = "Security group for ${var.vpc_name}"
   vpc_id      = var.vpc_id
 
